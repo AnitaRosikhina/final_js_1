@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="content">
+        <div class="result block">
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        <div class="btn_edit_style">
+            <button
+                    type="button"
+                    class="btn btn-warning edit"
+            >
+                edit
+            </button>
+            <button
+                    type="button"
+                    class="btn btn-info btn_style"
+            >
+                style
+            </button>
+        </div>
+        <div class="block">
+            <div class="menu none">
+                <textarea class="form-control textarea"></textarea>
+                <button
+                        type="button"
+                        class="btn btn-danger add"
+                >
+                    add
+                </button>
+                <button
+                        type="button"
+                        class="btn btn-success save"
+                >
+                    save
+                </button>
+            </div>
+            <div class="style none">
+                <form name="form_style">
+                    <h5>Font-Size:</h5>
+                    <input
+                            value="12px"
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault1"
+                    >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        12px
+                    </label>
+                    <input
+                            value="14px"
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                    >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        14px
+                    </label>
+                    <input
+                            value="16px"
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault3"
+                            checked
+                    >
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        16px
+                    </label>
+                    <input
+                            value="18px"
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault4"
+                    >
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        18px
+                    </label>
+                    <input
+                            value="20px"
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault5"
+                    >
+                    <label class="form-check-label" for="flexRadioDefault5">
+                        20px
+                    </label>
+                    <h5>Font Family:</h5>
+                    <select  name="select" class="form-select form-select-sm">
+                        <option disabled selected>Choose option</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                        <option value="monospace">monospace</option>
+                        <option value="sens-serif">sens-serif</option>
+                    </select>
+                    <h5>Colors:</h5>
+                    <button
+                            name="btn_text_color"
+                            type="button"
+                            class="btn btn-outline-success color_text"
+                    >
+                        Color of Text
+                    </button>
+                    <button
+                            name="btn_bg_color"
+                            type="button"
+                            class="btn btn-outline-danger color_bg"
+                    >
+                        Background color
+                    </button>
+                    <br>
+                    <input
+                            class="form-check-input bold"
+                            name="bold"
+                            type="checkbox"
+                            id="flexCheckDefault"
+                    >
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bold text
+                    </label>
+                    <input
+                            class="form-check-input cursive"
+                            name="cursive"
+                            type="checkbox"
+                            id="flexCheckDefault1"
+                    >
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        Cursive text
+                    </label>
+                </form>
+                <div class="block_color_text none">
+                    <div class="box bg_1"></div>
+                    <div class="box bg_2"></div>
+                    <div class="box bg_3"></div>
+                    <div class="box bg_4"></div>
+                    <div class="box bg_5"></div>
+                    <div class="box bg_6"></div>
+                    <div class="box bg_7"></div>
+                    <div class="box bg_8"></div>
+                    <div class="box bg_9"></div>
+                </div>
+            </div>
+            <div class="table_list none">
+                <h3>Choose what you want</h3>
+                <input
+                        class="form-check-input btn_table"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="table"
+                >
+                <label class="form-check-label" for="table">
+                    Table
+                </label>
+                <input
+                        class="form-check-input btn_list"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="list"
+                >
+                <label class="form-check-label" for="list">
+                    list
+                </label>
+            </div>
+            <div class="table_block none">
+                <div class="display_row">
+                    <div class="title">Count TR:</div>
+                    <input
+                            class="form-control form-control-sm count_tr"
+                            type="text"
+                    >
+                </div>
+                <div class="display_row">
+                    <div class="title">Count TD:</div>
+                    <input
+                            class="form-control form-control-sm count_td"
+                            type="text"
+                    >
+                </div>
+                <h5>Add style to your table</h5>
+                <div class="display_row">
+                    <div class="title">Widht of TD:</div>
+                    <input
+                            class="form-control form-control-sm widht_td"
+                            type="text"
+                    >
+                </div>
+                <div class="display_row">
+                    <div class="title">Height of TD:</div>
+                    <input
+                            class="form-control form-control-sm height_td"
+                            type="text"
+                    >
+                </div>
+                <div class="display_row">
+                    <div class="style_border">Widht of border:</div>
+                    <input
+                            class="form-control form-control-sm widht_border"
+                            type="text"
+                    >
+                    <div class="style_border">Type of border:</div>
+                    <select  name="select" class="form-select form-select-sm type_border">
+                        <option value="solid">solid</option>
+                        <option value="dashed">dashed</option>
+                        <option value="dotted">dotted</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                        <option value="ridge">ridge</option>
+                        <option value="inset">inset</option>
+                        <option value="outset">outset</option>
+                    </select>
+                    <div class="style_border">Color of border:</div>
+                    <input
+                            type="color"
+                            class="form-control form-control-color color_border"
+                            title="Choose your color"
+                    >
+                </div>
+                <button
+                        type="button"
+                        class="btn btn-success btn_create_table"
+                >
+                    Create table
+                </button>
+            </div>
+            <div class="list_block none">
+                <div class="display_row">
+                    <div class="title">Count Li:</div>
+                    <input
+                            class="form-control form-control-sm сount_li"
+                            type="text"
+                    >
+                </div>
+                <div class="display_row">
+                    <div class="title">Type of marks</div>
+                    <select  name="select" class="form-select form-select-sm type_marks">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </div>
+                <button
+                        type="button"
+                        class="btn btn-success btn_create_list"
+                >
+                    Create list
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
